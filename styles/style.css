@@ -3,6 +3,9 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+article{
+    width:100%;
+}
 .upper-part{
     display: flex;
     background-color:  #2D25A0;
@@ -92,7 +95,7 @@ body{
 fieldset{
     text-align: center;
     margin: 0px 20px;
-    margin-bottom: 20px;
+    margin-bottom: 158px;
     font-size: 20px;
 }
 .pos{
@@ -149,11 +152,33 @@ footer{
 
 /* mediaquery */
 @media only screen and (max-width:480px) {
-    section{
-        display:none;
+   /* upper part */
+    .upper-part{
+        display: block;
+            background-color:  #2D25A0;
+            width:360px;
     }
+    .half-width{
+        width:100%;
+    }
+    .half-width h1{
+        font-size: 36px;
+        color:#FFFFFF;
+    }
+    .half-width img{
+        width :329.01px;
+        height: 259px;
+        margin: 13px 15.99px 12px 0px;
+    }
+    .banner{
+        margin: 0;
+    }
+    /* mid section */
     .players{
         grid-template-columns: repeat(1,1fr);
+        margin: 0px 150px;
+        grid-column-gap: 0;
+        
     }   
     .player{
         width:330px;
@@ -164,6 +189,7 @@ footer{
         height: 256px;
         margin: 15px 15px 0px 15px;
     }
+    /* footer */
     .footer{
         justify-content: flex-start;
     }
