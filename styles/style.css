@@ -154,7 +154,7 @@ footer{
 @media only screen and (max-width:480px) {
    /* upper part */
     .upper-part{
-            display: block;
+        display: block;
             background-color:  #2D25A0;
             width:360px;
     }
@@ -203,6 +203,12 @@ footer{
         text-align: center;
         display: inline;
     }
+    .upper-part:hover .banner{
+        transform: none;
+        transition:none;
+        width: 100%;
+        margin:0;
+    }
 
 }
 
@@ -220,7 +226,9 @@ footer{
         margin: 0px 15px 200px 30px;        
     } 
     .upper-part:hover .banner{
-        overflow-x: hidden;
+        transform: none;
+        transition:none;
+        width: 100%;
         margin:0;
     }
 }
