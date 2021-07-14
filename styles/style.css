@@ -33,24 +33,24 @@ body{
     background-color: #E02C6D;
     padding:10px 24px 10px 24px;
 }
+    /*  hover button */
+.button:hover{
+
+    background-color: #6C6C6C;
+    transform: scale(1.9) rotate(60deg);
+}
+    /* hover , transition effect */
+.upper-part:hover .banner{
+    transform: scale(-1.9) rotate(180deg);
+    transition: transform 4s ease;
+    overflow-x: hidden;
+    margin:0;
+}
 .break{
     display: block;
 }
 
 /* mid section */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .players{
     margin: 70px 210px 160px 180px;
@@ -87,8 +87,26 @@ body{
     margin-bottom: 10px;
     color: #18191F;
     font-size: 28px;
+}  
+/* form */
+fieldset{
+    text-align: center;
+    margin: 0px 20px;
+    margin-bottom: 20px;
 }
-
+.pos{
+    display: flex;
+}
+/* submit button */
+button{
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 16px;
+    background-color: #E02C6D;
+    padding:10px 24px 10px 24px;
+    margin-left: 25px;
+    cursor: pointer;
+}
 /* footer */
 footer{
     width:100%;
@@ -125,4 +143,25 @@ footer{
 }
 .copyright{
     margin:0px 123.94px;
+}
+
+
+/* mediaquery */
+@media only screen and (max-width:480px) {
+    section{
+        display:none;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        
+    .player{
+        width:330px;
+        height:474px;
+    }
+    .player img{
+        width: 300px;
+        height: 256px;
+        margin: 15px 15px 0px 15px;
+    }
+
 }
