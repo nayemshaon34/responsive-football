@@ -150,11 +150,11 @@ footer{
 }
 
 
-/* mediaquery */
+/* mediaquery for mini phone */
 @media only screen and (max-width:480px) {
    /* upper part */
     .upper-part{
-        display: block;
+            display: block;
             background-color:  #2D25A0;
             width:360px;
     }
@@ -204,4 +204,23 @@ footer{
         display: inline;
     }
 
+}
+
+/* media query for tablet */
+@media only screen and (min-width:481px) and (max-width:769px) {
+     .upper-part{
+         flex-direction: column;
+         margin-bottom: 120px;
+     }
+     .upper-part img{
+         margin-left: 120px;
+     }
+     .players{
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px 15px 200px 30px;        
+    } 
+    .upper-part:hover .banner{
+        overflow-x: hidden;
+        margin:0;
+    }
 }
