@@ -1,6 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     width: 100%;
+    overflow-x: hidden;
 }
 .upper-part{
     display: flex;
@@ -34,4 +35,45 @@ body{
 }
 .break{
     display: block;
+}
+
+/* mid section */
+
+.containe{
+    margin: 70px 210px 160px 180px;
+    width:100%
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    
+    
+}
+.player{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.player img{
+    width:300px;
+    height:256px;
+    margin:16px;
+    margin-bottom: 0px;
+}
+.player-info{
+    width:300px;
+    height: 154px;
+    margin:16px 15px 33px 15px;
+}
+.player-info p{
+    size:16px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+.player-info h3{
+    margin-top: 16px;
+    margin-bottom: 10px;
 }
